@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffb6c1, #ff69b4);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(255, 105, 180, 0.8);
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h2 {
+    color: #fff5ee;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgba(255, 192, 203, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    background: rgba(255, 240, 245, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+}
+#razones ul li {
+    margin: 10px 0;
+    background: rgba(255, 105, 180, 0.8); /* Fondo más suave y con un poco de transparencia */
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff; /* Texto blanco para mayor contraste */
+    font-size: 1.1em; /* Aumentar el tamaño de la fuente para que se lea mejor */
+}
+
+footer {
+    background-color: rgba(255, 105, 180, 0.8);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* Ajuste para las imágenes y videos dentro del carrusel */
+.carousel-item img, 
+.carousel-item video {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 400px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Ajusta la imagen para que se vea completa sin recorte */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.special-message {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 192, 203, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid rgba(0, 0, 0, 0.7);
+    white-space: nowrap;
+    animation: blink-cursor 0.7s step-end infinite;
+    font-size: 1.2em; /* Reduce un poco el tamaño para mensajes más largos */
+    color: #ffffff;
+    max-width: 100%; /* Asegúrate de que el ancho sea dinámico */
+    margin: 20px auto;
+}
+
+
+@keyframes blink-cursor {
+    from { border-color: transparent; }
+    to { border-color: rgba(0, 0, 0, 0.7); }
+}
+
+
+/* Estilos para el mensaje emergente */
+.popup {
+    display: none; /* Por defecto está oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    background-color: rgb(216, 118, 118);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#momentos-felices {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: rgba(255, 182, 193, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#momentos-felices p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
